@@ -14,7 +14,7 @@
 	<name>TicketBookingRestApp</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -51,6 +51,9 @@
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		
+		
+		
 	</dependencies>
 
 	<build>
@@ -59,6 +62,20 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			
+			<plugin>
+		    <groupId>org.codehaus.mojo</groupId>
+		    <artifactId>cobertura-maven-plugin</artifactId>
+		    <version>2.7</version>
+		    <configuration>
+		        <formats>
+		            <format>html</format>
+		            <format>xml</format>
+		        </formats>
+		        <check />
+		    </configuration>
+		</plugin>
+			
 		</plugins>
 	</build>
 
