@@ -3,5 +3,5 @@ jdk:
   - openjdk8
    
 script: 
-  - /.mvnw clean test
+  - ./mvnw clean test
   - bash <(curl -s https://codecov.io/bash)
